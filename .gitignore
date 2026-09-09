@@ -1,0 +1,9 @@
+_tmp_audio/
+venv/
+.venv/
+__pycache__/
+*.pyc
+.DS_Store
+
+smoke_test.wav
+smoke_test.mp3

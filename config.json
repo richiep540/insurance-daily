@@ -1,0 +1,134 @@
+{
+  "podcast_title": "Insurance Daily",
+  "podcast_subtitle": "The US insurance news briefing for agents and brokers.",
+  "podcast_description": "A ten-minute briefing on the US insurance market, every weekday morning. Rates and capacity, carrier appetite, claims and catastrophe losses, regulation, M&A and the insurtech deals that matter. Written for agents and brokers who need to know what moved before their first call of the day.",
+  "podcast_author": "Richard Price",
+  "podcast_owner_email": "richard.price@dezrez.com",
+  "podcast_language": "en-us",
+  "podcast_category": "Business",
+  "podcast_subcategory": "Investing",
+  "podcast_link": "",
+  "lookback_hours": 30,
+  "history_days": 5,
+  "max_items_per_feed": 25,
+  "max_items_considered": 70,
+  "blocked_sources": [
+    "newsbreak",
+    "msn.com",
+    "yahoo",
+    "sportskeeda"
+  ],
+  "feeds": [
+    {
+      "url": "https://www.insurancejournal.com/feed/",
+      "source_name": "Insurance Journal"
+    },
+    {
+      "url": "https://www.insurancebusinessmag.com/us/rss/",
+      "source_name": "Insurance Business America"
+    },
+    {
+      "url": "https://www.claimsjournal.com/feed/",
+      "source_name": "Claims Journal"
+    },
+    {
+      "url": "https://www.carriermanagement.com/feed/",
+      "source_name": "Carrier Management"
+    },
+    {
+      "url": "https://www.artemis.bm/feed/",
+      "source_name": "Artemis"
+    },
+    {
+      "url": "https://coverager.com/feed/",
+      "source_name": "Coverager"
+    },
+    {
+      "url": "https://www.insurtechinsights.com/feed/",
+      "source_name": "Insurtech Insights"
+    },
+    {
+      "url": "https://news.google.com/rss/search?q=(insurance+OR+insurer+OR+broker)+(carrier+OR+underwriting+OR+premiums+OR+%22property+casualty%22)+when:2d&hl=en-US&gl=US&ceid=US:en",
+      "require_any": [
+        "insurance",
+        "insurer",
+        "insured",
+        "broker",
+        "underwrit",
+        "premium",
+        "carrier",
+        "reinsur",
+        "claims",
+        "policyholder"
+      ]
+    }
+  ],
+  "audience": "independent US insurance agents and brokers - the people selling and servicing commercial and personal lines",
+  "editorial_brief": "Pick what an agent or broker genuinely needs to know before their first call today. Strongly prefer: carrier appetite and capacity changes, rate movements, new products and programmes, carrier financial strength and solvency, catastrophe losses and claims trends, state regulation and compliance deadlines, agency M&A and consolidation, commission and compensation news, E&O exposure, and technology that changes how agencies actually operate. Downweight: individual crime and accident stories with no market implication, consumer-advice pieces, and vendor press releases with no substance. Prefer stories with a concrete consequence for someone placing business.",
+  "stories_per_episode": 11,
+  "triage_max_tokens": 4000,
+  "segments": [
+    {
+      "id": "open",
+      "label": "Top story",
+      "slots": [
+        "lead"
+      ],
+      "words": 250,
+      "brief": "Open on the single most consequential story of the day - straight in, no throat-clearing. Then a quick welcome naming the show and the date, and a one-line tease of what else is coming. Fast."
+    },
+    {
+      "id": "headlines",
+      "label": "The rest of the day's news",
+      "slots": [
+        "headline"
+      ],
+      "words": 900,
+      "brief": "Move briskly through the remaining stories, roughly a minute to ninety seconds each. Say what happened, name the source, and say what it means for an agency. Do not linger and do not pad."
+    },
+    {
+      "id": "deep",
+      "label": "One thing worth understanding",
+      "slots": [
+        "deep"
+      ],
+      "words": 650,
+      "brief": "Take one story and actually unpack it. The background a listener needs, what is genuinely at stake, who it helps and who it hurts, and what a broker should do about it. This is the segment that earns the subscription."
+    },
+    {
+      "id": "close",
+      "label": "Quick hits and sign-off",
+      "slots": [
+        "quick"
+      ],
+      "words": 200,
+      "brief": "Rapid-fire remaining items - people moves, funding rounds, numbers worth knowing - a sentence each. Then a short sign-off. Mention the show returns tomorrow morning."
+    }
+  ],
+  "hosts": [
+    {
+      "name": "Dana",
+      "voice_name": "en-US-Chirp3-HD-Sulafat",
+      "gemini_voice": "Sulafat"
+    },
+    {
+      "name": "Ray",
+      "voice_name": "en-US-Chirp3-HD-Schedar",
+      "gemini_voice": "Schedar"
+    }
+  ],
+  "anthropic_model": "claude-sonnet-5",
+  "max_tokens_per_segment": 8000,
+  "tts_engine": "gemini",
+  "gemini_tts_model": "gemini-2.5-flash-tts",
+  "gemini_tts_style_prompt": "A weekday morning news briefing for insurance professionals. Two American co-anchors who know this industry inside out and respect their listeners' time. Dana leads: crisp, warm, authoritative, the pace of someone with a lot to get through and no interest in wasting anyone's morning. Ray adds the context and the occasional dry aside. Both speak in natural American accents, clearly and briskly, but like people talking rather than reading. Emphasis on the numbers and the names that matter. Confident, awake, unhurried enough to be understood. Never breathless, never a hard-sell radio voice, never flat.",
+  "multispeaker_batch_bytes": 3200,
+  "batch_gap_ms": 140,
+  "google_tts_language_code": "en-US",
+  "tts_speaking_rate": 1.0,
+  "turn_gap_ms": 300,
+  "segment_gap_ms": 700,
+  "target_word_count": 2000,
+  "cover_image": "cover.jpg",
+  "sponsor_ad_text": ""
+}
