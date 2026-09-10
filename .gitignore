@@ -7,3 +7,5 @@ __pycache__/
 
 smoke_test.wav
 smoke_test.mp3
+service-account.json
+*-service-account.json

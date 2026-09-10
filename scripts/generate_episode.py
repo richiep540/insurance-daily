@@ -48,6 +48,13 @@ GOOGLE_TTS_API_KEY = os.environ.get("GOOGLE_TTS_API_KEY")
 # Only needed when the Anthropic key is organisation-scoped rather than tied to a
 # single workspace. A workspace-scoped key does not need this at all.
 ANTHROPIC_WORKSPACE_ID = os.environ.get("ANTHROPIC_WORKSPACE_ID", "").strip()
+GOOGLE_SERVICE_ACCOUNT_JSON = os.environ.get("GOOGLE_SERVICE_ACCOUNT_JSON", "").strip()
+if not GOOGLE_SERVICE_ACCOUNT_JSON:
+    # Local convenience: drop the downloaded key file in the project root instead.
+    _sa_file = os.path.join(ROOT, "service-account.json")
+    if os.path.exists(_sa_file):
+        with open(_sa_file) as _f:
+            GOOGLE_SERVICE_ACCOUNT_JSON = _f.read().strip()
 # The public base URL where docs/ ends up being served, e.g.
 # https://yourusername.github.io/insurance-daily
 PUBLIC_BASE_URL = os.environ.get("PUBLIC_BASE_URL", "").rstrip("/")
@@ -84,6 +91,12 @@ def post_with_retry(url, *, headers, json_body, timeout=180, attempts=5, label="
                 )
             if resp.status_code in (408, 429) or resp.status_code >= 500:
                 last_error = f"HTTP {resp.status_code}: {resp.text[:400]}"
+            elif "aiplatform.endpoints.predict" in resp.text:
+                raise SystemExit(
+                    f"{label}: the service account is missing Vertex AI permission.\n\n"
+                    "Grant it the 'Vertex AI User' role (roles/aiplatform.user) at "
+                    "console.cloud.google.com/iam-admin/iam, then retry."
+                )
             elif "anthropic-workspace-id" in resp.text:
                 raise SystemExit(
                     f"{label}: this Anthropic key is organisation-scoped, not workspace-scoped. "
@@ -696,12 +709,59 @@ def batch_turns(turns, max_bytes):
     return batches
 
 
+_VERTEX_CREDENTIALS = None
+
+
+def vertex_auth_headers():
+    """Mint an OAuth2 bearer token from the service-account JSON.
+
+    Gemini-TTS is served by Vertex AI, which rejects API keys outright with
+    'Permission aiplatform.endpoints.predict denied'. Chirp 3: HD still uses the
+    plain API key, so only this path needs a service account.
+    """
+    global _VERTEX_CREDENTIALS
+    if not GOOGLE_SERVICE_ACCOUNT_JSON:
+        raise SystemExit(
+            "GOOGLE_SERVICE_ACCOUNT_JSON is not set.\n\n"
+            "Gemini-TTS runs on Vertex AI and does not accept API keys.\n"
+            "Either save the service-account key as service-account.json in the project "
+            "folder, set the GOOGLE_SERVICE_ACCOUNT_JSON variable, or set "
+            "\"tts_engine\": \"chirp3\" in config.json to use the free API-key path."
+        )
+    try:
+        from google.oauth2 import service_account
+        from google.auth.transport.requests import Request as GoogleRequest
+    except ImportError:
+        raise SystemExit("google-auth is not installed. Run: pip install -r requirements.txt")
+
+    try:
+        info = json.loads(GOOGLE_SERVICE_ACCOUNT_JSON)
+    except json.JSONDecodeError as e:
+        raise SystemExit(
+            f"GOOGLE_SERVICE_ACCOUNT_JSON is not valid JSON ({e}). Paste the whole file "
+            "contents, starting with {{ and ending with }}."
+        )
+
+    if _VERTEX_CREDENTIALS is None:
+        _VERTEX_CREDENTIALS = service_account.Credentials.from_service_account_info(
+            info, scopes=["https://www.googleapis.com/auth/cloud-platform"]
+        )
+    if not _VERTEX_CREDENTIALS.valid:
+        _VERTEX_CREDENTIALS.refresh(GoogleRequest())
+
+    return {
+        "content-type": "application/json",
+        "Authorization": f"Bearer {_VERTEX_CREDENTIALS.token}",
+        "x-goog-user-project": info.get("project_id", ""),
+    }
+
+
 def synthesize_multispeaker(batch, config):
     """One request, many turns — returns LINEAR16 WAV bytes."""
     aliases = {h["name"]: re.sub(r"[^A-Za-z0-9]", "", h["name"]) for h in config["hosts"]}
     resp = post_with_retry(
-        f"https://texttospeech.googleapis.com/v1/text:synthesize?key={GOOGLE_TTS_API_KEY}",
-        headers={"content-type": "application/json"},
+        "https://texttospeech.googleapis.com/v1/text:synthesize",
+        headers=vertex_auth_headers(),
         json_body={
             "input": {
                 "prompt": config["gemini_tts_style_prompt"],

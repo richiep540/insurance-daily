@@ -45,6 +45,9 @@ jobs:
         env:
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
           GOOGLE_TTS_API_KEY: ${{ secrets.GOOGLE_TTS_API_KEY }}
+          # Gemini-TTS runs on Vertex AI and rejects API keys. Paste the whole
+          # service-account JSON as this secret.
+          GOOGLE_SERVICE_ACCOUNT_JSON: ${{ secrets.GOOGLE_SERVICE_ACCOUNT_JSON }}
           PUBLIC_BASE_URL: ${{ vars.PUBLIC_BASE_URL }}
           # Only needed for an organisation-scoped Anthropic key. Harmless when empty.
           ANTHROPIC_WORKSPACE_ID: ${{ vars.ANTHROPIC_WORKSPACE_ID }}
