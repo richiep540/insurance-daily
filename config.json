@@ -119,7 +119,7 @@
   ],
   "anthropic_model": "claude-sonnet-5",
   "max_tokens_per_segment": 8000,
-  "tts_engine": "gemini",
+  "tts_engine": "chirp3",
   "gemini_tts_model": "gemini-2.5-flash-tts",
   "gemini_tts_style_prompt": "A weekday morning news briefing for insurance professionals. Two American co-anchors who know this industry inside out and respect their listeners' time. Dana leads: crisp, warm, authoritative, the pace of someone with a lot to get through and no interest in wasting anyone's morning. Ray adds the context and the occasional dry aside. Both speak in natural American accents, clearly and briskly, but like people talking rather than reading. Emphasis on the numbers and the names that matter. Confident, awake, unhurried enough to be understood. Never breathless, never a hard-sell radio voice, never flat.",
   "multispeaker_batch_bytes": 3200,

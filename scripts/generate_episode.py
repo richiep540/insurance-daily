@@ -26,6 +26,7 @@ import sys
 import json
 import time
 import base64
+import random
 import datetime
 import xml.sax.saxutils as saxutils
 
@@ -861,13 +862,39 @@ def build_episode_audio_gemini(turns, config, out_path):
     return len(combined)
 
 
+def gap_after(turn, next_turn, config, rng):
+    """How long to leave before the next turn.
+
+    A fixed gap after every turn is most of what makes stitched TTS sound
+    mechanical - real conversation has a rhythm. A two-word reaction comes back
+    almost instantly; a question leaves a beat before the answer; the same
+    speaker carrying on barely pauses at all.
+    """
+    base = config.get("turn_gap_ms", 300)
+    text = turn["text"].rstrip()
+    words = len(text.split())
+
+    if next_turn is not None and next_turn["speaker"] == turn["speaker"]:
+        scale = 0.35          # same voice continuing - just a breath
+    elif words <= 4:
+        scale = 0.45          # "Go on." - the reply lands on top of it
+    elif text.endswith("?"):
+        scale = 1.3           # let a question hang
+    elif text.endswith(("...", "-")):
+        scale = 0.4           # trailing off, interrupted
+    else:
+        scale = 1.0
+    return max(90, int(base * scale * rng.uniform(0.82, 1.22)))
+
+
 def build_episode_audio_chirp3(turns, config, out_path):
-    """Original one-call-per-turn path. Kept as a fallback."""
+    """One call per turn, stitched with varied pauses. Free tier, API key auth."""
     voices = {h["name"]: h["voice_name"] for h in config["hosts"]}
     language_code = config["google_tts_language_code"]
     speaking_rate = config.get("tts_speaking_rate", 1.0)
-    turn_gap = AudioSegment.silent(duration=config.get("turn_gap_ms", 320))
     segment_gap = AudioSegment.silent(duration=config.get("segment_gap_ms", 900))
+    # Seeded per episode so a given script always stitches identically.
+    rng = random.Random(f"{config['podcast_title']}-{datetime.date.today().isoformat()}")
 
     tmp_dir = os.path.join(ROOT, "_tmp_audio")
     os.makedirs(tmp_dir, exist_ok=True)
@@ -901,7 +928,9 @@ def build_episode_audio_chirp3(turns, config, out_path):
             os.remove(seg_path)
             time.sleep(0.15)  # be gentle on rate limits
 
-        combined += turn_gap
+        combined += AudioSegment.silent(
+            duration=gap_after(turn, turns[index + 1] if index + 1 < len(turns) else None, config, rng)
+        )
         if (index + 1) % 25 == 0:
             print(f"    {index + 1}/{len(turns)} turns voiced ({len(combined) / 60000:.1f} min so far)")
 
