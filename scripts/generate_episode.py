@@ -479,6 +479,12 @@ def write_script(config, stories, date_label):
     running_summary_lines = []
     segments = config["segments"]
 
+    # Read verbatim at the top of every episode, never regenerated, so the AI
+    # disclosure is identical each day and cannot drift.
+    disclaimer = (config.get("disclaimer_text") or "").strip()
+    if disclaimer:
+        all_turns.append({"speaker": host_names[0], "text": disclaimer, "segment": "disclaimer"})
+
     for index, segment in enumerate(segments):
         items = [s for s in stories if s["slot"] in segment["slots"]]
         if not items:
@@ -952,6 +958,7 @@ def write_episode_description(config, stories, date_label):
     """Show notes: what's in the episode, with sources named. Also does real work for
     discovery — this text is what podcast apps search."""
     lines = [f"{date_label}. Today's US insurance briefing for agents and brokers.", ""]
+    note = (config.get("show_notes_disclosure") or "").strip()
     for story in stories:
         if story["slot"] != "quick":
             lines.append(f"- {story['title']} ({story['source']})")
@@ -959,6 +966,8 @@ def write_episode_description(config, stories, date_label):
     if quick:
         lines.append("")
         lines.append("Also: " + "; ".join(s["title"] for s in quick))
+    if note:
+        lines += ["", note]
     return "\n".join(lines)
 
 

@@ -168,6 +168,16 @@ pool.append({"link": "http://c", "title": "C"})
 check("covered story dropped when alternatives exist",
       [i["link"] for i in g.drop_covered(pool, covered, 5)], ["http://c"])
 
+print("\n-- AI disclaimer --")
+check("disclaimer is configured", bool(cfg.get("disclaimer_text")), True)
+d = cfg["disclaimer_text"]
+for phrase in ("AI-generated", "synthetic", "get things wrong", "Verify"):
+    check(f"disclaimer says {phrase!r}", phrase in d, True)
+spoken = g.normalize_for_speech(d)
+check("disclaimer survives speech normalisation intact", spoken.strip() == d.strip(), True)
+check("disclaimer is one TTS chunk", len(g.chunk_text(spoken)), 1)
+check("show notes disclosure is configured", bool(cfg.get("show_notes_disclosure")), True)
+
 print("\n-- show notes --")
 sel = [{"title": "Carrier exits Florida", "source": "Insurance Journal", "slot": "lead", "why": ""},
        {"title": "Broker M&A round-up", "source": "Coverager", "slot": "quick", "why": ""}]
@@ -175,6 +185,7 @@ notes = g.write_episode_description(cfg, sel, "Wednesday 9 September 2026")
 check("show notes name the lead story and its source",
       "Carrier exits Florida (Insurance Journal)" in notes, True)
 check("quick hits land in the Also line", "Also: Broker M&A round-up" in notes, True)
+check("show notes carry the AI disclosure", cfg["show_notes_disclosure"] in notes, True)
 
 print("\n-- multi-speaker batching --")
 mk = lambda seg, txt: {"speaker": "Mackie", "text": txt, "spoken": txt, "segment": seg}
