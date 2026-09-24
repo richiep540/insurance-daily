@@ -94,6 +94,18 @@ check("normal feed untouched",
       g.split_aggregator_title("HUF x Spitfire", "Free Skate Magazine"),
       ("HUF x Spitfire", "Free Skate Magazine"))
 
+print("\n-- download tracking prefix --")
+check("prefix wraps an absolute url",
+      g.tracked_url("https://example.github.io/x/ep.mp3", {"download_prefix": "https://op3.dev/e/"}),
+      "https://op3.dev/e/https://example.github.io/x/ep.mp3")
+check("no prefix configured leaves the url alone",
+      g.tracked_url("https://example.github.io/x/ep.mp3", {}), "https://example.github.io/x/ep.mp3")
+check("relative url is never wrapped",
+      g.tracked_url("episodes/ep.mp3", {"download_prefix": "https://op3.dev/e/"}), "episodes/ep.mp3")
+check("trailing slash on the prefix is not doubled",
+      g.tracked_url("https://a/b.mp3", {"download_prefix": "https://op3.dev/e"}),
+      "https://op3.dev/e/https://a/b.mp3")
+
 print("\n-- feed.xml / index.html / covered_links --")
 tmp = tempfile.mkdtemp(prefix="flatspot-test-")
 g.DOCS_DIR, g.FEED_XML = tmp, os.path.join(tmp, "feed.xml")
@@ -129,6 +141,8 @@ check("itunes:image present",
 check("itunes category", ch.find(f"{itunes}category").get("text"), cfg["podcast_category"])
 check("one item", len(ch.findall("item")), 1)
 enc = ch.find("item").find("enclosure")
+check("enclosure carries the tracking prefix",
+      enc.get("url").startswith("https://op3.dev/e/https://"), True)
 check("enclosure type", enc.get("type"), "audio/mpeg")
 check("enclosure length", enc.get("length"), "28311552")
 check("item duration", ch.find("item").find(f"{itunes}duration").text, "10:24")
