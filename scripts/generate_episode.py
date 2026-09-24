@@ -1140,10 +1140,20 @@ def main():
             raise SystemExit("GOOGLE_TTS_API_KEY is not set.")
         return smoke_test(config)
 
-    if not feeds_only and not ANTHROPIC_API_KEY:
-        raise SystemExit("ANTHROPIC_API_KEY is not set.")
-    if not (feeds_only or script_only) and not GOOGLE_TTS_API_KEY:
-        raise SystemExit("GOOGLE_TTS_API_KEY is not set.")
+    needed = []
+    if not feeds_only:
+        needed.append("ANTHROPIC_API_KEY")
+    if not (feeds_only or script_only) and config.get("tts_engine", "gemini") == "chirp3":
+        needed.append("GOOGLE_TTS_API_KEY")
+    missing = [n for n in needed if not os.environ.get(n)]
+    if missing:
+        present = [n for n in needed if os.environ.get(n)]
+        raise SystemExit(
+            "Missing: " + ", ".join(missing)
+            + (("\nPresent: " + ", ".join(present)) if present else "")
+            + "\n\nAdd them at https://github.com/richiep540/insurance-daily/settings/secrets/actions"
+            + "\nunder the Secrets tab (not Variables), as Repository secrets."
+        )
 
     today = datetime.date.today()
     date_label = today.strftime("%A %-d %B %Y")
