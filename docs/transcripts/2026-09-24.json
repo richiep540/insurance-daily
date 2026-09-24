@@ -1,317 +1,337 @@
 [
   {
     "speaker": "Dana",
-    "text": "Applied Systems could be up for sale, and this one's worth stopping for. Insurance Journal is reporting that Hellman and Friedman, the private equity firm that owns it, is exploring a sale that could value the company at up to ten billion dollars.",
+    "text": "FEMA's updated its flood maps, and thousands of homeowners are waking up to a new flood zone and a new premium, right now, today. MarketWatch has the story.",
     "segment": "open"
   },
   {
     "speaker": "Ray",
-    "text": "Ten billion. For an agency management system.",
+    "text": "This is the thing that always sneaks up on the personal lines side. A map update happens, and suddenly a house that's never carried flood coverage is sitting in a special flood hazard area.",
     "segment": "open"
   },
   {
     "speaker": "Dana",
-    "text": "For the agency management system. This is the platform running the back office for thousands of independent agencies in this country. Quoting, policy tracking, commission accounting - if you're an agent, there's a decent chance your whole shop runs through it every single day.",
+    "text": "And if there's a mortgage on it, that's not optional anymore. Lender's going to require the policy. So you've got homeowners getting a letter, not understanding why, and calling their agent confused and a little angry.",
     "segment": "open"
   },
   {
     "speaker": "Ray",
-    "text": "And that's exactly why a sale at that price matters to the people listening. New ownership usually means a new roadmap. Pricing can move, integrations can get reprioritized, acquisition strategy can shift entirely.",
+    "text": "Which means this is a service call before it's a sales call. You need to know which counties got remapped, and you need to know before the client does.",
     "segment": "open"
   },
   {
     "speaker": "Dana",
-    "text": "Sources say Hellman and Friedman is working with advisers on this, but nothing's signed, no buyer named. So don't panic, but do pay attention.",
+    "text": "MarketWatch doesn't give us the full list of affected areas in one place, so if you write flood in any volume, this is a today job, not a someday job. Check the FEMA map service center for your book's zip codes.",
     "segment": "open"
   },
   {
     "speaker": "Ray",
-    "text": "If you're an Applied Systems user, this is one to watch through the fall, not react to today.",
+    "text": "And remember there's a real placement decision underneath this too. National Flood Insurance Program versus private flood markets, and pricing between the two can move around a lot depending on the zone.",
     "segment": "open"
   },
   {
     "speaker": "Dana",
-    "text": "Right. This is Insurance Daily, your ten minute briefing for independent agents and brokers. I'm Dana.",
+    "text": "Worth a real conversation with the client, not just a renewal notice.",
     "segment": "open"
   },
   {
     "speaker": "Ray",
-    "text": "I'm Ray. It's Thursday, September twenty fourth, twenty twenty six.",
+    "text": "Agreed. Okay, that's Insurance Daily for Thursday the twenty fourth of September, twenty twenty six. I'm Ray.",
     "segment": "open"
   },
   {
     "speaker": "Dana",
-    "text": "Coming up, we've got more on how this deal could ripple through the vendor landscape agents depend on.",
+    "text": "I'm Dana. Coming up, we've got the rest of today's market moves for you, so let's get into it.",
     "segment": "open"
   },
   {
     "speaker": "Ray",
-    "text": "Let's get into it.",
-    "segment": "open"
+    "text": "First up, weather again, but a different flavor. Carrier Management is reporting California's governor declared a state of emergency this week, ahead of what forecasters are calling a potentially record-breaking El Nino season.",
+    "segment": "headlines"
   },
   {
     "speaker": "Dana",
-    "text": "First up, Florida. Insurance Business America is reporting that property carriers down there are starting to compete on price. We're talking rate cuts on more than sixty two thousand policies.",
+    "text": "Record-breaking as in strongest ever recorded, that's not a small claim.",
     "segment": "headlines"
   },
   {
     "speaker": "Ray",
-    "text": "Sixty two thousand. That's a real number, not a press release number.",
+    "text": "That's what the forecasters are saying, and it's still strengthening. The proclamation mobilizes state resources ahead of winter storms. For agents with California property books, this isn't a today problem, it's a heads-up. Capacity in that state is already tight after the wildfire years, and a brutal storm season on top of that is not going to help admitted market appetite.",
     "segment": "headlines"
   },
   {
     "speaker": "Dana",
-    "text": "Right, and it's the clearest sign yet that Florida's flipping from recovery mode to an actual competitive market. After years of hard-market pain, carriers that stabilized their books are now chasing growth again.",
+    "text": "So if you've got coastal or hillside property clients out there, this is the moment to talk deductibles and excess flood, before the storms actually hit and everyone's calling at once.",
     "segment": "headlines"
   },
   {
     "speaker": "Ray",
-    "text": "So if you're a Florida agent, this is the moment to be shopping renewals you haven't touched in three years. The market that told you no in twenty twenty three might say yes, and cheaper, right now.",
+    "text": "Exactly. Get ahead of the renewal conversation, not behind it.",
     "segment": "headlines"
   },
   {
     "speaker": "Dana",
-    "text": "The story doesn't name every carrier moving, so check your own appointments. But the direction is clear. Soft-market behavior is back in a state that basically invented hard-market pain.",
+    "text": "Staying with weather, Claims Journal has a Nor'easter bearing down on the Northeast right now. We're talking waves up to thirty feet, hitting the Mid-Atlantic and New England coastline.",
     "segment": "headlines"
   },
   {
     "speaker": "Ray",
-    "text": "Which ties right into our next one. Also Insurance Business America, Florida's governor's race is turning into a fight over who should carry hurricane risk in the first place.",
+    "text": "Thirty feet is genuinely dangerous for anything near the water.",
     "segment": "headlines"
   },
   {
     "speaker": "Dana",
-    "text": "This is the David Jolly story. He's the Democrat, and his plan would pull wind coverage out of private homeowners policies entirely. There's a disputed attack ad calling it a, quote, one thousand dollar hurricane tax.",
+    "text": "Right, and this is immediate. If you've got coastal property clients in that corridor, this is a today call, not a next-week call. Check flood coverage is in force, make sure clients know what to document if there's damage, and be ready for a claims surge on the commercial side too, marinas, waterfront retail, that kind of thing.",
     "segment": "headlines"
   },
   {
     "speaker": "Ray",
-    "text": "Disputed being the key word. We don't know if that figure holds up. But the underlying policy question is real, and it's on the ballot.",
+    "text": "Two coasts, two very different storm stories, same lesson. Get in front of your book before the water does.",
     "segment": "headlines"
   },
   {
     "speaker": "Dana",
-    "text": "If wind risk gets carved out of homeowners policies statewide, that reshapes how every Florida agent builds a personal lines account. Bundled HO-three policies, excess and surplus wind placements, Citizens exposure, all of it moves.",
+    "text": "Now here's one that should annoy every agent writing property in Texas. Carrier Management reports that of the one hundred and sixty utility companies operating in fire-prone parts of the state, only eight have filed the wildfire response plans state law requires.",
     "segment": "headlines"
   },
   {
     "speaker": "Ray",
-    "text": "Nothing changes today. But if you write personal lines in Florida, this is a race to actually watch, not skim.",
+    "text": "Eight out of one hundred and sixty. That's not a compliance gap, that's basically nobody complying.",
     "segment": "headlines"
   },
   {
     "speaker": "Dana",
-    "text": "Next, over to Claims Journal. Apollo's CEO, Marc Rowan, is publicly going after insurance regulators in Delaware.",
+    "text": "Lawmakers only found out how bad it was last week, in a House State Affairs hearing. And this comes right on the heels of a wildfire season that's been chaotic straight through the summer.",
     "segment": "headlines"
   },
   {
     "speaker": "Ray",
-    "text": "This is about Mark Walter's insurance companies, which are now under a federal probe. Rowan singled out the Delaware Department of Insurance for how it's handled the whole situation.",
+    "text": "So what does an agent do with this. You can't fix utility compliance.",
     "segment": "headlines"
   },
   {
     "speaker": "Dana",
-    "text": "When a private equity heavyweight starts publicly criticizing a state regulator, that's not noise. That's a signal there's real friction underneath a solvency question.",
+    "text": "No, but it's worth knowing for subrogation potential if a utility-sparked fire damages a client's property, and it's worth flagging as part of your own E and O hygiene. If you're writing property in those fire-prone counties, document that you've had the wildfire conversation with the client. This is the kind of story that comes back around in litigation two years from now.",
     "segment": "headlines"
   },
   {
     "speaker": "Ray",
-    "text": "And private equity ownership of insurers is already a sensitive topic for regulators everywhere. If you've got clients placed with carriers in that Walter group, or anything PE-owned and Delaware-domiciled, this is one to keep on your radar. Not a reason to panic, but a reason to pay attention to how it develops.",
+    "text": "Good point. Moving to benefits. Insurance Business America is reporting that benefits data is now front and center in broker renewal talks this fall.",
     "segment": "headlines"
   },
   {
     "speaker": "Dana",
-    "text": "Agreed. Now something more immediate. Insurance Journal says there's a powerful Nor'easter building off the Northeast coast.",
+    "text": "Because the numbers are ugly. More than a third of employers saw premium increases of ten percent or more, even after they made changes to their plans.",
     "segment": "headlines"
   },
   {
     "speaker": "Ray",
-    "text": "Torrential rain risk for eastern Massachusetts, and flood threats moving into New York City, New Jersey, and Washington DC, right through the weekend.",
+    "text": "So plan design tweaks aren't cutting it anymore.",
     "segment": "headlines"
   },
   {
     "speaker": "Dana",
-    "text": "That's a huge swath of commercial and personal lines exposure. Basement flooding, business interruption, contractors' equipment sitting in low-lying yards.",
+    "text": "Not on their own. Which means if you've got a benefits book, or you're referring clients to a benefits partner, you need real claims and utilization data walking into that renewal meeting, not just last year's numbers with a percentage bumped on top. Clients are going to push back harder this year.",
     "segment": "headlines"
   },
   {
     "speaker": "Ray",
-    "text": "If you write anywhere along that corridor, now's the time to remind clients about flood coverage gaps, especially anyone who thinks their standard policy already handles this. It usually doesn't.",
+    "text": "And Brown and Brown is clearly betting on exactly that pressure. Insurance Business America also reports the brokerage is targeting CFOs directly, with twenty twenty seven health costs already climbing.",
     "segment": "headlines"
   },
   {
     "speaker": "Dana",
-    "text": "Get ahead of it before the claims calls start coming in Monday.",
+    "text": "Why CFOs specifically.",
     "segment": "headlines"
   },
   {
     "speaker": "Ray",
-    "text": "Switching gears. Insurance Business America has a story on Meta's smart glasses, and it's a big one for anyone thinking about E and O exposure.",
+    "text": "Because the finance side is where the pain shows up. Only one in four finance chiefs have managed to absorb rising benefit costs without it hitting the rest of the business somewhere, hiring, margins, pricing.",
     "segment": "headlines"
   },
   {
     "speaker": "Dana",
-    "text": "There's a new class action, two hundred and thirty pages, and it mixes wiretap claims with product defect theories against the glasses themselves.",
+    "text": "So for smaller agencies without a dedicated benefits practice, that's worth noting. The big brokerages are going straight to the C-suite with a data-driven pitch. If you've got commercial clients with group benefits, that's the conversation they're going to expect from you too, or they'll go find it elsewhere.",
     "segment": "headlines"
   },
   {
     "speaker": "Ray",
-    "text": "Two theories stacked together like that is unusual, and it's landing right when carriers are already tightening language around data collection and generative AI.",
+    "text": "Last one, and it's a big one for commercial lines generally. Travelers' latest Risk Index, covered by Carrier Management, finds cyber is back on top as the number one business concern, ahead of economic worries.",
     "segment": "headlines"
   },
   {
     "speaker": "Dana",
-    "text": "So watch where this one lands. If a court lets wiretap and product liability theories both stick to a wearable device, that opens the door for a lot more of these suits.",
+    "text": "And the driver this time is specifically artificial intelligence.",
     "segment": "headlines"
   },
   {
     "speaker": "Ray",
-    "text": "And for agents, that's a conversation starter with any client using or issuing wearable tech, retailers, delivery fleets, healthcare. Cyber and E and O forms both deserve a second look there.",
+    "text": "Fifty eight percent of respondents said they worry a great deal or some about cyber risk, and Travelers is pointing squarely at the rapid growth of AI use with basically no governance or regulation behind it.",
     "segment": "headlines"
   },
   {
     "speaker": "Dana",
-    "text": "Last one, and it's actually good news. Insurance Journal has two new product launches worth knowing. CFC has rolled out affirmative AI coverage inside its intellectual property policy.",
+    "text": "That's a very useful data point to have in your pocket. A lot of commercial clients still think cyber is somebody else's problem, or they think their existing policy automatically covers whatever their staff are doing with AI tools.",
     "segment": "headlines"
   },
   {
     "speaker": "Ray",
-    "text": "Makes sense. AI is scrambling who actually owns what when it comes to content and inventions, and the legal framework hasn't caught up. Having affirmative language instead of silence is a real selling point.",
+    "text": "Which it may not. This is a good prompt to open the cyber and tech E and O conversation fresh this fall, especially with clients who've started using AI tools internally without really thinking about the exposure.",
     "segment": "headlines"
   },
   {
     "speaker": "Dana",
-    "text": "And CRC Specialty just launched something called Insurisk Cyber.",
-    "segment": "headlines"
-  },
-  {
-    "speaker": "Ray",
-    "text": "Two new markets in one week for AI and cyber exposure. If you've got clients nervous about generative AI risk and getting vague answers from their current carrier, these are two names to go pitch right now.",
+    "text": "Not telling anyone how to underwrite it, but flagging it as a live conversation is exactly the kind of value add that keeps a client engaged before renewal, not after a breach.",
     "segment": "headlines"
   },
   {
     "speaker": "Dana",
-    "text": "Concrete appetite, not just talk. That's rare enough that it's worth flagging on its own.",
-    "segment": "headlines"
-  },
-  {
-    "speaker": "Ray",
-    "text": "Alright, that's the rest of the day's news.",
-    "segment": "headlines"
-  },
-  {
-    "speaker": "Dana",
-    "text": "So that's the news roundup. But there's one story out of California today that deserves more than a headline, and it's the one thing we want to actually unpack for you.",
+    "text": "Speaking of things that sit quietly on a client's desk until they suddenly don't, let's talk about MultiPlan.",
     "segment": "deep"
   },
   {
     "speaker": "Ray",
-    "text": "This is the Insurance Business America piece on Jane Kim's plan for California insurance.",
+    "text": "Oh, this one's been simmering for a while. Insurance Business America is reporting on an antitrust ruling that should be getting more attention from benefits brokers than it is.",
     "segment": "deep"
   },
   {
     "speaker": "Dana",
-    "text": "Right. Quick background for anyone who hasn't been tracking California politics. Jane Kim is a front-runner in the race to succeed the current insurance commissioner. And she's put out a platform that would be a genuinely big structural change if it happens.",
+    "text": "For anyone who doesn't touch self-funded plans day to day, give us the basics. What is MultiPlan actually doing?",
     "segment": "deep"
   },
   {
     "speaker": "Ray",
-    "text": "Two pieces to it. First, a floor on claims payouts. Meaning carriers would be required to pay out some minimum level on claims, not just whatever their adjusters land on after the file's worked. Second, a state-run disaster pool, which would sit alongside or maybe partly replace some of what the FAIR Plan does today.",
+    "text": "MultiPlan is a repricer. Self-funded employer plans use it to negotiate down what they pay out-of-network providers. The plan gets a discount, MultiPlan takes a cut, everybody's happy in theory. It's baked into a huge number of self-funded arrangements.",
     "segment": "deep"
   },
   {
     "speaker": "Dana",
-    "text": "And the timing is not an accident. This is landing right as the FAIR Plan is pushing through a rate increase. So the pitch is basically, the market of last resort is getting more expensive, here's my alternative.",
+    "text": "And the antitrust claim is what, exactly?",
     "segment": "deep"
   },
   {
     "speaker": "Ray",
-    "text": "Her opponent isn't buying it. Insurance Business America reports pushback from the opposing campaign and from industry voices, essentially saying the numbers don't work. No detail yet on whose numbers, or what the funding mechanism for a state-run pool would actually look like.",
+    "text": "The allegation is that insurers and MultiPlan coordinated in a way that suppressed what providers get paid, more than you'd expect from normal arm's length negotiation. And here's the number that jumped out at me from the reporting. Insurers allegedly follow MultiPlan's suggested rate eighty seven percent of the time, with no human review.",
     "segment": "deep"
   },
   {
     "speaker": "Dana",
-    "text": "That's the honest caveat here. This is a campaign platform, not a bill that's been scored. We don't have a rate impact, we don't have a funding source, we don't have a timeline. So nobody should be re-underwriting their California book off this today.",
+    "text": "Eighty seven percent with no one looking at it. That's not a pricing tool at that point, that's autopilot.",
     "segment": "deep"
   },
   {
     "speaker": "Ray",
-    "text": "But here's why it's worth ten minutes of your attention anyway. A payout floor changes claims economics for every admitted carrier writing property in that state. If you can't settle low anymore, loss costs go up, and loss costs going up means rate goes up, or appetite goes down. That's basic.",
+    "text": "Right, and that's exactly the argument in the litigation. If it's genuinely independent decision making by each insurer, that's one thing. If it's effectively automatic and coordinated across the market, that starts to look like the kind of concerted action antitrust law exists to catch.",
     "segment": "deep"
   },
   {
     "speaker": "Dana",
-    "text": "And a state-run disaster pool competing with, or absorbing, FAIR Plan business changes where your distressed clients end up. Right now you're placing them in FAIR Plan and hunting for E and S capacity to fill the gap. If there's a state pool with different rules, different capacity, different pricing, that's a new market you'd have to learn from scratch.",
+    "text": "Okay, so who's actually named here, and what's at stake for them?",
     "segment": "deep"
   },
   {
     "speaker": "Ray",
-    "text": "Who does this help? On paper, homeowners who've been getting non-renewed and are stuck on FAIR Plan paying more for less coverage. That's the political case, and it's not a crazy one given what's happened to California's admitted market the last few years.",
+    "text": "It's insurers and MultiPlan on the defense side. What's at stake for them is obvious, potential liability and a pricing model that a lot of the self-funded market has quietly relied on for years. But the part our listeners need to sit with is what it means for the benefits broker who put a client into one of these arrangements.",
     "segment": "deep"
   },
   {
     "speaker": "Dana",
-    "text": "Who does it hurt, or at least worry? Carriers who've been slowly, carefully coming back into California after the non-renewal wave. A payout floor is exactly the kind of thing that makes an admitted carrier's actuaries nervous about writing more business in a state they're already cautious on.",
+    "text": "Walk me through that, because on the surface this feels like an insurer and vendor problem, not a broker problem.",
     "segment": "deep"
   },
   {
     "speaker": "Ray",
-    "text": "And it's a live question for the surplus lines market too. If admitted capacity pulls back further because of uncertainty, more of this ends up in E and S, which means more of it ends up on your desk, priced differently, serviced differently.",
+    "text": "It feels that way until a self-funded employer client calls their broker and asks why their plan's out-of-network pricing was run through a system that's now the subject of an antitrust ruling. The broker recommended the plan design. The broker probably explained the savings. If that savings turns out to be built on something a court has a problem with, the client's next question is going to be, did you know about this.",
     "segment": "deep"
   },
   {
     "speaker": "Dana",
-    "text": "So what do you actually do with this today. Nothing to your California book, because there's nothing final. But if you write California property, this is now a line item to watch through the election, not just noise.",
+    "text": "And that's an E and O conversation, not a benefits conversation.",
     "segment": "deep"
   },
   {
     "speaker": "Ray",
-    "text": "Yeah. Put a note in the file. Flag it to any California clients who ask why the market's still tight. And if you've got carrier relationships out there, this is a good question to ask your underwriters directly. How are they thinking about California if this platform gains ground.",
+    "text": "That's the whole point of why this made the show. It's not about whether MultiPlan wins or loses. It's that brokers who placed self-funded plans using this kind of repricing arrangement now have a client relations issue and a documentation issue, whatever happens in court.",
     "segment": "deep"
   },
   {
     "speaker": "Dana",
-    "text": "Because whoever wins that race is going to be setting the tone for FAIR Plan, for admitted appetite, for the whole California property conversation for years. Worth knowing where the front-runner stands before it's policy instead of a platform.",
+    "text": "Who does this actually hurt in the near term, practically speaking?",
     "segment": "deep"
   },
   {
     "speaker": "Ray",
-    "text": "Alright. That's the story worth understanding today.",
+    "text": "Brokers with a heavy self-funded book, particularly on the mid-market employer side, where MultiPlan-style repricing is common. It's less of an issue for fully insured small group business, obviously.",
     "segment": "deep"
   },
   {
     "speaker": "Dana",
-    "text": "Let's do the rest quick. Insurance Journal reports Plymouth Rock Assurance has named Chris Taylor president and CEO of its Independent Agency Group, effective October twelfth. He's coming back to the company with a background in personal lines leadership.",
+    "text": "And who does it help?",
+    "segment": "deep"
+  },
+  {
+    "speaker": "Ray",
+    "text": "Honestly, it's an opening for brokers who can show they understand the mechanics and can talk their clients through it calmly, rather than the client finding out from a news alert. Being the one who raises it first is worth something here.",
+    "segment": "deep"
+  },
+  {
+    "speaker": "Dana",
+    "text": "So what's the actual move for a broker listening this morning with self-funded clients on the book?",
+    "segment": "deep"
+  },
+  {
+    "speaker": "Ray",
+    "text": "Go find out which of your self-funded clients use MultiPlan or a similar repricing arrangement. Not to relitigate the placement, just to know your exposure and be ready for the question. And it's worth checking with the carrier or TPA on how they're responding, because this is still moving.",
+    "segment": "deep"
+  },
+  {
+    "speaker": "Dana",
+    "text": "Get ahead of the phone call instead of reacting to it.",
+    "segment": "deep"
+  },
+  {
+    "speaker": "Ray",
+    "text": "That's it. Same instinct as the cyber conversation, really. Raise it before the client does.",
+    "segment": "deep"
+  },
+  {
+    "speaker": "Dana",
+    "text": "Alright, let's move on to what else is happening in the market today.",
+    "segment": "deep"
+  },
+  {
+    "speaker": "Ray",
+    "text": "Quick moves to flag. Insurance Business America has personnel news out of Brown and Brown, Brown and Riding, and Lockton. New roles spanning small business, casualty and employee benefits. Nothing that changes your market access today, but worth knowing if you're tracking where talent's landing.",
+    "segment": "close"
+  },
+  {
+    "speaker": "Dana",
+    "text": "Good one to bookmark. Next, Carrier Management with a stat for anyone touching commercial transportation or cargo lines. New survey of one hundred and fifty U.S.-based loss and organized retail crime prevention leaders. Eighty-one percent say cargo theft is more organized than ever. Seventy-nine percent say their organization's more concerned about it than ever before.",
     "segment": "close"
   },
   {
     "speaker": "Ray",
-    "text": "Good hire for their agency channel if you're appointed with Plymouth Rock in the Northeast. Worth a note to your rep.",
-    "segment": "close"
-  },
-  {
-    "speaker": "Ray",
-    "text": "Next, Insurance Day is reporting Fidelis has hired Scor's Williams to be chief underwriting officer at Pine Walk. Another signal that specialty MGA platforms are still pulling senior underwriting talent out of the treaty side.",
+    "text": "And sixty-three percent flagged something on top of that, though the summary cuts off there. Point stands, organized retail crime is showing up in loss runs. If you write cargo, that's a renewal conversation.",
     "segment": "close"
   },
   {
     "speaker": "Dana",
-    "text": "And last one's not really an insurance headline until you think about it for five seconds. Carrier Management reports DoorDash will pay one hundred thirty one point five million dollars to settle claims it underpaid delivery workers in New York City. Mayor Mamdani called it the largest worker settlement in city history. DoorDash also has to submit to a new pay monitoring system.",
+    "text": "Last one. Insurance Business America again, on the eHealth CHOICE enrollment deal. Brokers are keeping agent-of-record status under the model. That matters, because it means the compensation structure stays intact for brokers in that channel.",
     "segment": "close"
   },
   {
     "speaker": "Ray",
-    "text": "That monitoring piece is the part to watch. Gig platforms keep getting pushed toward employee-like obligations. That's a comp and liability conversation for anyone writing app-based delivery or transportation risk.",
+    "text": "Employee confusion's the bigger worry in the survey data, apparently. But for you, the commission piece not disappearing is the headline.",
     "segment": "close"
   },
   {
     "speaker": "Dana",
-    "text": "Keep an eye on it. That's Insurance Daily for Thursday, September twenty fourth.",
+    "text": "That's the show. Thanks for spending your ten minutes with us.",
     "segment": "close"
   },
   {
     "speaker": "Ray",
-    "text": "Back tomorrow morning with the next one. Have a good day out there.",
+    "text": "Back tomorrow morning, same time. Have a good one.",
     "segment": "close"
   }
 ]
