@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+     xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd"
+     xmlns:atom="http://www.w3.org/2005/Atom"
+     xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Insurance Daily</title>
+    <link>https://richiep540.github.io/insurance-daily</link>
+    <atom:link href="https://richiep540.github.io/insurance-daily/feed.xml" rel="self" type="application/rss+xml" />
+    <description>A ten-minute briefing on the US insurance market, every weekday morning. Rates and capacity, carrier appetite, claims and catastrophe losses, regulation, M&amp;A and the insurtech deals that matter. Written for agents and brokers who need to know what moved before their first call of the day.</description>
+    <language>en-us</language>
+    <copyright>Richard Price</copyright>
+    <lastBuildDate>Thu, 24 Sep 2026 15:25:38 GMT</lastBuildDate>
+    <generator>Insurance Daily pipeline</generator>
+    <image>
+      <url>https://richiep540.github.io/insurance-daily/cover.jpg</url>
+      <title>Insurance Daily</title>
+      <link>https://richiep540.github.io/insurance-daily</link>
+    </image>
+    <itunes:author>Richard Price</itunes:author>
+    <itunes:subtitle>The US insurance news briefing for agents and brokers.</itunes:subtitle>
+    <itunes:summary>A ten-minute briefing on the US insurance market, every weekday morning. Rates and capacity, carrier appetite, claims and catastrophe losses, regulation, M&amp;A and the insurtech deals that matter. Written for agents and brokers who need to know what moved before their first call of the day.</itunes:summary>
+    <itunes:type>episodic</itunes:type>
+    <itunes:explicit>false</itunes:explicit>
+    <itunes:image href="https://richiep540.github.io/insurance-daily/cover.jpg" />
+    <itunes:owner>
+      <itunes:name>Richard Price</itunes:name>
+      <itunes:email>richard.price@dezrez.com</itunes:email>
+    </itunes:owner>
+    <itunes:category text="Business">
+      <itunes:category text="Investing" />
+    </itunes:category>
+    <item>
+      <title>24 September 2026 — Insurance Daily</title>
+      <link>https://richiep540.github.io/insurance-daily/episodes/2026-09-24.mp3</link>
+      <description>Thursday 24 September 2026. Today's US insurance briefing for agents and brokers.
+
+- Hellman &amp; Friedman Explores Sale of Applied Systems at Up to $10B, Sources Say (Insurance Journal)
+- Jane Kim's plan to remake California insurance draws fire as FAIR Plan increase nears (Insurance Business America)
+- Florida property insurers move from recovery to rate competition (Insurance Business America)
+- Florida's governor's race turns on a big question: who should carry the state's hurricane risk? (Insurance Business America)
+- Apollo’s Rowan Blasts Regulators for Handling of Walter Insurers (Claims Journal)
+- Northeast Expecting Torrential Rains, Flood Risk as Coastal Storm Builds (Insurance Journal)
+- New Meta smart glasses class action could test where privacy claims land (Insurance Business America)
+- Markets/Coverages: CFC Begins Affirmative AI for Intellectual Property; CRC Specialty Launches Insurisk Cyber (Insurance Journal)
+
+Also: People Moves: Taylor Returns to Plymouth Rock Assurance as President and CEO; Fidelis hires Scor’s Williams as Pine Walk chief underwriting officer; DoorDash to Pay $131M for Underpaying NYC Delivery Workers</description>
+      <itunes:summary>Thursday 24 September 2026. Today's US insurance briefing for agents and brokers.
+
+- Hellman &amp; Friedman Explores Sale of Applied Systems at Up to $10B, Sources Say (Insurance Journal)
+- Jane Kim's plan to remake California insurance draws fire as FAIR Plan increase nears (Insurance Business America)
+- Florida property insurers move from recovery to rate competition (Insurance Business America)
+- Florida's governor's race turns on a big question: who should carry the state's hurricane risk? (Insurance Business America)
+- Apollo’s Rowan Blasts Regulators for Handling of Walter Insurers (Claims Journal)
+- Northeast Expecting Torrential Rains, Flood Risk as Coastal Storm Builds (Insurance Journal)
+- New Meta smart glasses class action could test where privacy claims land (Insurance Business America)
+- Markets/Coverages: CFC Begins Affirmative AI for Intellectual Property; CRC Specialty Launches Insurisk Cyber (Insurance Journal)
+
+Also: People Moves: Taylor Returns to Plymouth Rock Assurance as President and CEO; Fidelis hires Scor’s Williams as Pine Walk chief underwriting officer; DoorDash to Pay $131M for Underpaying NYC Delivery Workers</itunes:summary>
+      <itunes:author>Richard Price</itunes:author>
+      <itunes:duration>11:52</itunes:duration>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:explicit>false</itunes:explicit>
+      <itunes:image href="https://richiep540.github.io/insurance-daily/cover.jpg" />
+      <pubDate>Thu, 24 Sep 2026 15:25:38 GMT</pubDate>
+      <enclosure url="https://richiep540.github.io/insurance-daily/episodes/2026-09-24.mp3" length="11397985" type="audio/mpeg" />
+      <guid isPermaLink="false">insurance-daily-2026-09-24</guid>
+    </item>
+  </channel>
+</rss>
