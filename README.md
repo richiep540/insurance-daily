@@ -8,8 +8,8 @@ Hosts: **Dana** and **Ray**.
 
 Every weekday at 09:00 UTC (5am US Eastern) a GitHub Action pulls the last thirty hours of trade
 press, has Claude select and rank the stories that actually matter to an agency, writes a briefing
-around them, voices it with Google's Gemini-TTS multi-speaker synthesis, and publishes it to a
-podcast RSS feed on GitHub Pages.
+around them, voices it with Google Chirp 3: HD, and publishes it to a podcast RSS feed on
+GitHub Pages.
 
 ---
 
@@ -34,10 +34,10 @@ TRIAGE: one Claude call ranks them and picks ~11, assigning each a slot
       └── quick     one-line mentions
       │
       ▼
-Claude writes 4 segments from that selection (~2,000 words ≈ 10 minutes)
+Claude writes 4 segments from that selection (~1,650 words + disclaimer)
       │
       ▼
-Gemini-TTS voices it in conversational batches ──▶ one mp3
+Chirp 3: HD voices each turn, stitched with varied pauses ──▶ one mp3
       │
       ▼
 docs/feed.xml + episodes.json + index.html ──▶ GitHub Pages
@@ -75,8 +75,7 @@ Identical to the other pipelines. In short:
    `ANTHROPIC_WORKSPACE_ID` variable instead.
 3. **Settings → Pages**: deploy from branch `main`, folder `/docs`
 4. **Variables tab**: `PUBLIC_BASE_URL` = the Pages URL, **no trailing slash**
-5. Google Cloud: enable **Cloud Text-to-Speech API** *and* **Vertex AI API** — Gemini-TTS runs on
-   Vertex and returns a 403 without it
+5. Google Cloud: enable the **Cloud Text-to-Speech API**
 6. **Actions → Daily podcast → Run workflow** to produce the first episode
 7. Submit the feed at [podcastsconnect.apple.com](https://podcastsconnect.apple.com) and
    [podcasters.spotify.com](https://podcasters.spotify.com)
@@ -117,14 +116,18 @@ These exist because the audience is professional and will not forgive sloppiness
 **`audience`** — currently agents and brokers. Change this and triage, framing and vocabulary all
 shift with it.
 
-**`segments[].words`** — currently 250 / 900 / 650 / 200 = 2,000 words ≈ 10 minutes at Gemini-TTS
-pace (measured at roughly 199 words per minute). Scale together to change runtime.
+**`segments[].words`** — currently 220 / 760 / 520 / 150 = 1,650 words, plus the ~103-word
+disclaimer. The US Chirp 3: HD voices run at roughly 168 words per minute (measured from the
+first episode: 1,947 words ran 11:57), so that lands near ten and a half minutes. Scale
+together to change runtime.
 
-**`gemini_tts_style_prompt`** — how the hosts sound. Plain English direction. Audition changes
-cheaply without generating an episode:
+**`disclaimer_text`** — the spoken AI disclosure at the top of every episode.
+
+**Voices** — `hosts[].voice_name`, currently `en-US-Chirp3-HD-*`. Audition changes cheaply
+without generating an episode:
 
 ```bash
-GOOGLE_TTS_API_KEY=... python scripts/generate_episode.py --smoke-test
+bash smoke.sh
 ```
 
 **Feeds** — `source_name` overrides an unwieldy feed title, since sources get read aloud.
@@ -140,7 +143,8 @@ python3 -m venv venv && ./venv/bin/pip install -r requirements.txt
 
 ## Known gotchas
 
-- **403 from Gemini-TTS** — the Vertex AI API is not enabled on the Google Cloud project.
+- **403 from Gemini-TTS** — that engine runs on Vertex AI and needs a service-account key, not
+  an API key. The default engine is `chirp3`, which has neither requirement.
 - **"API key is not scoped to a workspace"** — org-scoped Anthropic key; see setup step 2.
 - **`coverager.com` returns 403** to automated fetches. It fails gracefully and the other feeds
   more than cover the gap.
