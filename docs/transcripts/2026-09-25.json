@@ -1,0 +1,322 @@
+[
+  {
+    "speaker": "Dana",
+    "text": "First, a quick note on what this is. Insurance Daily is an AI-generated briefing. Every weekday morning we scan the industry trade press, pick out the stories that matter most to agents and brokers, and turn them into this show. The voices you are hearing are synthetic, and the script is written by AI from published reporting. We name our sources as we go so you can check them. But AI can and does get things wrong, so please treat this as a starting point and not as a source of record. Verify the detail before you act on anything you hear here.",
+    "segment": "disclaimer"
+  },
+  {
+    "speaker": "Dana",
+    "text": "Florida just handed out four more homeowners rate cuts, and this time it's not a one-off.",
+    "segment": "open"
+  },
+  {
+    "speaker": "Ray",
+    "text": "Carrier Management has the story. The state's insurance commissioner signed off on four decreases averaging seven percent, hitting sixty two thousand policies at renewal.",
+    "segment": "open"
+  },
+  {
+    "speaker": "Dana",
+    "text": "And this is round four. We've now had a string of these approvals since the litigation reforms went through.",
+    "segment": "open"
+  },
+  {
+    "speaker": "Ray",
+    "text": "Right, and the read from the commissioner's office is blunt. Taking excessive litigation out of the system is doing exactly what it was supposed to do to pricing. They're saying more cuts are coming.",
+    "segment": "open"
+  },
+  {
+    "speaker": "Dana",
+    "text": "For agents, that's a real shift in how you quote Florida property right now. If you've been telling clients to just brace for another hard renewal, that story's getting old fast.",
+    "segment": "open"
+  },
+  {
+    "speaker": "Ray",
+    "text": "And keep watching Citizens. Every one of these private market cuts chips away at the case for staying in the state pool. Depopulation keeps moving.",
+    "segment": "open"
+  },
+  {
+    "speaker": "Dana",
+    "text": "Worth checking with your carrier reps on timing before you promise anything to a client, but the direction is clear.",
+    "segment": "open"
+  },
+  {
+    "speaker": "Ray",
+    "text": "It's Friday, September twenty fifth, twenty twenty six. This is Insurance Daily.",
+    "segment": "open"
+  },
+  {
+    "speaker": "Dana",
+    "text": "Coming up, we've got more on the numbers behind that Florida shift, and what it means for your book heading into fourth quarter renewals.",
+    "segment": "open"
+  },
+  {
+    "speaker": "Ray",
+    "text": "Let's get into it.",
+    "segment": "open"
+  },
+  {
+    "speaker": "Dana",
+    "text": "First up, Hawaii. Insurance Journal is reporting Hurricane Nolo is bearing down on the islands, top winds around seventy five miles an hour last check, sitting a few hundred miles out and churning closer.",
+    "segment": "headlines"
+  },
+  {
+    "speaker": "Ray",
+    "text": "And this is a state that's already had a brutal run since March. Multiple disaster events, hundreds of millions in damage before this storm even shows up.",
+    "segment": "headlines"
+  },
+  {
+    "speaker": "Dana",
+    "text": "Right, so if you've got any Hawaii exposure at all, personal or commercial, this is a today problem, not a wait-and-see problem. Binding is going to freeze up fast once there's an official track threatening landfall.",
+    "segment": "headlines"
+  },
+  {
+    "speaker": "Ray",
+    "text": "So get ahead of it. Call clients now, confirm flood is actually in place and not assumed, and get any outstanding applications bound before underwriters pull back. Once a named storm is imminent, that window closes.",
+    "segment": "headlines"
+  },
+  {
+    "speaker": "Dana",
+    "text": "Next, California. Insurance Journal says Southern California Edison is pushing lawmakers to hold a special session before year end, specifically to look at capping utility wildfire liability going forward.",
+    "segment": "headlines"
+  },
+  {
+    "speaker": "Ray",
+    "text": "That's Edison International CEO Pedro Pizarro making the ask this week. And you can see why. Utility wildfire liability has been one of the biggest single drivers of California's hard market for years.",
+    "segment": "headlines"
+  },
+  {
+    "speaker": "Dana",
+    "text": "If lawmakers actually take this up and cap future exposure, that changes the risk calculus for anybody writing utility infrastructure, and it could ripple into how carriers view California property generally.",
+    "segment": "headlines"
+  },
+  {
+    "speaker": "Ray",
+    "text": "Nothing's decided. It's a push for a session, not a deal. But if you've got California commercial property or utility-adjacent risk, this is one to watch into the fourth quarter.",
+    "segment": "headlines"
+  },
+  {
+    "speaker": "Dana",
+    "text": "Moving to Washington. Insurance Journal reports the NAIC has formally defended the state-based regulatory model in a letter responding to Senator Elizabeth Warren.",
+    "segment": "headlines"
+  },
+  {
+    "speaker": "Ray",
+    "text": "She's been pushing on how much oversight there actually is of insurers' bets on private credit, whether state regulators can see what Wall Street's doing inside these balance sheets.",
+    "segment": "headlines"
+  },
+  {
+    "speaker": "Dana",
+    "text": "The NAIC's letter, sent Thursday, says the supervision is there and it's adequate. This isn't going away though. It's a solvency oversight fight, and solvency oversight eventually shows up as rating agency actions and reinsurance treaty terms.",
+    "segment": "headlines"
+  },
+  {
+    "speaker": "Ray",
+    "text": "Nothing an agent needs to act on today, but worth knowing the fight is live, especially if you're placing with carriers that lean heavily into alternative investments.",
+    "segment": "headlines"
+  },
+  {
+    "speaker": "Dana",
+    "text": "Product news now. Insurance Business America reports Beazley has launched two new AI-specific endorsements, one covering voluntary system shutdowns, one covering regulatory penalties tied to AI use.",
+    "segment": "headlines"
+  },
+  {
+    "speaker": "Ray",
+    "text": "This is the market admitting existing wordings just weren't built for this. If your client shuts down an AI system voluntarily, is that a covered event under a standard cyber or E and O form? Increasingly, no, not without something like this.",
+    "segment": "headlines"
+  },
+  {
+    "speaker": "Dana",
+    "text": "So for any commercial client using AI in underwriting, claims, hiring, customer service, this is a coverage gap conversation you should be having now, before a regulator or a plaintiff's lawyer finds the gap for you.",
+    "segment": "headlines"
+  },
+  {
+    "speaker": "Ray",
+    "text": "Expect more carriers to follow with their own bespoke AI wordings. This won't be the last one.",
+    "segment": "headlines"
+  },
+  {
+    "speaker": "Dana",
+    "text": "Next, a broader one from Insurance Business America, on risk management. The piece argues brokers are underselling it right as underwriters get more selective, leaning harder on automated screening tools.",
+    "segment": "headlines"
+  },
+  {
+    "speaker": "Ray",
+    "text": "The point being, automated screening widens the gap between well-run accounts and poorly-run ones. A client with weak controls now gets flagged faster and priced worse than they used to.",
+    "segment": "headlines"
+  },
+  {
+    "speaker": "Dana",
+    "text": "Which means the broker who's actually selling risk management, helping the client tighten up before submission, is protecting their pricing. The broker who just submits and hopes is going to see more accounts land in worse tiers.",
+    "segment": "headlines"
+  },
+  {
+    "speaker": "Ray",
+    "text": "It's not a new idea, but it's a good reminder heading into fourth quarter renewals. Risk management conversations now save you a harder conversation at renewal.",
+    "segment": "headlines"
+  },
+  {
+    "speaker": "Dana",
+    "text": "Last one. Insurance Business America reports SPG has acquired HCM Unlocked, a specialist in leave-of-absence compliance and management technology.",
+    "segment": "headlines"
+  },
+  {
+    "speaker": "Ray",
+    "text": "Timing matters here. We're now at thirteen states with their own paid leave programs, all with different eligibility rules, different funding mechanisms, different employer obligations.",
+    "segment": "headlines"
+  },
+  {
+    "speaker": "Dana",
+    "text": "For any agency with multi-state employer clients, that patchwork is genuinely unmanageable by hand at this point. This deal is basically the market saying leave compliance is its own specialty now, not a add-on to HR.",
+    "segment": "headlines"
+  },
+  {
+    "speaker": "Ray",
+    "text": "Worth knowing who's building in this space, because your multi-state clients are going to start asking you for help navigating it, even if it's not strictly an insurance product.",
+    "segment": "headlines"
+  },
+  {
+    "speaker": "Dana",
+    "text": "Alright, that's the rest of today's headlines.",
+    "segment": "headlines"
+  },
+  {
+    "speaker": "Ray",
+    "text": "Up next, we're going back to Florida, digging into what these rate cuts actually mean for renewal conversations this quarter.",
+    "segment": "headlines"
+  },
+  {
+    "speaker": "Dana",
+    "text": "Before we get to Florida, one more thing worth understanding today, because it explains why nobody should get too comfortable about capacity easing everywhere at once.",
+    "segment": "deep"
+  },
+  {
+    "speaker": "Ray",
+    "text": "This is the Moody's number you flagged earlier.",
+    "segment": "deep"
+  },
+  {
+    "speaker": "Dana",
+    "text": "Insurance Business America is reporting on it. Moody's modeled what happens if the US takes a genuine one in two hundred year hit. Not a bad hurricane season, a true tail event.",
+    "segment": "deep"
+  },
+  {
+    "speaker": "Ray",
+    "text": "And the number.",
+    "segment": "deep"
+  },
+  {
+    "speaker": "Dana",
+    "text": "Seven hundred billion dollars. That's the protection gap Moody's says could open up, losses so far above what's insured and reinsured that the total comes close to matching the entire capital base of the global reinsurance industry.",
+    "segment": "deep"
+  },
+  {
+    "speaker": "Ray",
+    "text": "Say that again slowly, because that's the part that lands. One event, and you're talking losses on the scale of essentially all the capital reinsurers hold worldwide.",
+    "segment": "deep"
+  },
+  {
+    "speaker": "Dana",
+    "text": "Not all of it gone, but close enough that Moody's is using the comparison to explain why reinsurers and the capital markets are pricing tail risk the way they are right now.",
+    "segment": "deep"
+  },
+  {
+    "speaker": "Ray",
+    "text": "This is the background for why cat bond terms have stayed tight, and why ILS investors keep asking for more before they commit capital.",
+    "segment": "deep"
+  },
+  {
+    "speaker": "Dana",
+    "text": "Exactly. It's not modeling for its own sake. Insurance-linked securities investors read a report like this and it shapes the yield they demand and the attachment points they'll accept.",
+    "segment": "deep"
+  },
+  {
+    "speaker": "Ray",
+    "text": "So who does this help and who does it hurt.",
+    "segment": "deep"
+  },
+  {
+    "speaker": "Dana",
+    "text": "It helps the disciplined carriers. Strong balance sheets, solid treaty structure, diversified books that aren't overly concentrated in cat zones. They still get capacity, they just pay for it.",
+    "segment": "deep"
+  },
+  {
+    "speaker": "Ray",
+    "text": "And it hurts.",
+    "segment": "deep"
+  },
+  {
+    "speaker": "Dana",
+    "text": "Anyone leaning on thin retentions or concentrated exposure. Coastal habitational, frame construction in wind zones, anything already fighting for admitted capacity. If reinsurers keep pricing to this kind of tail scenario, that pressure doesn't ease. It gets passed straight down to primary rate and to what carriers will write at all.",
+    "segment": "deep"
+  },
+  {
+    "speaker": "Ray",
+    "text": "So what's the actual takeaway for a broker on a renewal call this quarter. Because seven hundred billion dollars doesn't mean much across a desk.",
+    "segment": "deep"
+  },
+  {
+    "speaker": "Dana",
+    "text": "It means don't assume this is a short soft patch just because you've seen a few markets loosen up somewhere, like personal lines in Florida. The reinsurance capital math behind commercial cat and E and S property hasn't fundamentally changed.",
+    "segment": "deep"
+  },
+  {
+    "speaker": "Ray",
+    "text": "Set expectations early on anything with real cat exposure. If a client's expecting last year's renewal to repeat, that conversation needs to start now, not the week before expiration.",
+    "segment": "deep"
+  },
+  {
+    "speaker": "Dana",
+    "text": "And it's a good moment to actually talk through retentions and layering with clients, rather than just re-quoting the program the way it's always been structured. Worth checking with your carrier what's driving their appetite this cycle before you promise anything.",
+    "segment": "deep"
+  },
+  {
+    "speaker": "Ray",
+    "text": "Nobody's saying panic. But a number like that is Moody's telling the market why capacity stays expensive where it's genuinely exposed, even while rates ease somewhere else.",
+    "segment": "deep"
+  },
+  {
+    "speaker": "Dana",
+    "text": "Right. Two things true at once. Okay, now let's actually go back to Florida.",
+    "segment": "deep"
+  },
+  {
+    "speaker": "Ray",
+    "text": "Quick hits before we go. The Business Journals has Wisconsin workers' comp premiums down eight percent, with all but five of the top firms in the state seeing declines.",
+    "segment": "close"
+  },
+  {
+    "speaker": "Dana",
+    "text": "Comp keeps softening. If you write Wisconsin business, that's a renewal conversation to get ahead of, not a surprise in December.",
+    "segment": "close"
+  },
+  {
+    "speaker": "Ray",
+    "text": "Insurance Business America has people moves at Liberty Mutual and NFP, new heads of capital solutions and of insurance solutions and capital markets. Both shops building out that side of the business.",
+    "segment": "close"
+  },
+  {
+    "speaker": "Dana",
+    "text": "Worth watching where that capacity ends up landing.",
+    "segment": "close"
+  },
+  {
+    "speaker": "Ray",
+    "text": "And Insurance Journal reports cat bond investors are betting Hurricane Polo spares them, as it looks set to miss Mexico as a major threat. Icosa's Florian Steiger says never say never, but the market's pricing it as a near miss.",
+    "segment": "close"
+  },
+  {
+    "speaker": "Dana",
+    "text": "A live read on how the ILS crowd handles a storm that's still moving.",
+    "segment": "close"
+  },
+  {
+    "speaker": "Ray",
+    "text": "That's the show. Busy one out of Florida today.",
+    "segment": "close"
+  },
+  {
+    "speaker": "Dana",
+    "text": "Always is. We're back tomorrow morning with the next one. Have a good Friday.",
+    "segment": "close"
+  }
+]
